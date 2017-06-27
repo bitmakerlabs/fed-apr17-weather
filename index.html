@@ -3,27 +3,40 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>HTML/CSS Week 12 - Weather App</title>
+  <meta name="description" content="A small weather application that will give us the current, high and low temperature in any city.">
+  <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
+  <!-- <link rel="stylesheet" href="css/normalize.min.css"> -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    </head>
-    <body>
+  <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+  <!-- AJAJ -->
+
+  <form name="weather" class="weather center-fixed">
+    <input type="text" name="city" id="city" class="city form-element" placeholder="Enter a city">
+    <input type="button" name="send" id="send" class="send form-element" value="Send">
+  </form>
+
+  <div class="temps shadow center-fixed">
+    <div class="temp curr"><span id="curr">20</span>&deg;C</div>
+    <div class="temp high"><span id="high">23</span>&deg;C</div>
+    <div class="temp low"><span id="low">15</span>&deg;C</div>
+  </div>
+
+  <div class="name shadow center-fixed">Toronto</div>
 
 
-
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="js/date.js"></script>
-        <script src="js/current.js"></script>
-        <!--<script src="js/forecast.js"></script>-->
-    </body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/date.js"></script>
+  <script src="js/current.js"></script>
+  <!--<script src="js/forecast.js"></script>-->
+</body>
 </html>

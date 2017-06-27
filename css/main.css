@@ -1,1 +1,82 @@
+/*Single page application hack*/
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
 
+body {
+  font: normal normal 1.0em Helvetica, sans-serif;
+  background-color: rgb(252, 63, 3);
+  color: #222;
+}
+
+.center-fixed {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.shadow {
+  text-shadow: 1px 1px 0 rgba(255,255,255, 0.7);
+}
+
+.weather {
+  top: 0;
+  left: 0;
+  padding: 1em 0;
+}
+
+.temps {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 18em;
+  left: 0;
+}
+
+  .temp {
+    font-size: 3em;
+    line-height: 1;
+  }
+  .curr {
+    display: block;
+    font-size: 6em;
+  }
+  .high, .low {
+    display: inline-block;
+  }
+  .temp span {
+    font-size: 2em;
+    vertical-align: text-top;
+  }
+
+.name {
+  bottom: 0;
+  left: 0;
+  text-transform: uppercase;
+  font-size: 5em;
+  line-height: 1.2;
+}
+
+.form-element {
+  outline: none;
+  border: none;
+  font-size: 3em;
+  padding: 0.25em;
+}
+  .form-element:focus {
+    outline: 3px solid rgb(107, 120, 198);
+    outline-offset: -3px;
+  }
+
+.city {
+  background-color: #ddd;
+}
+.send {
+  background-color: rgb(99, 194, 103);
+  color: white;
+}
+
+
+
+
+/* end */
